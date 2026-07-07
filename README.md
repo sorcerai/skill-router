@@ -44,8 +44,11 @@ stay fully discoverable and loadable through the router.
 
 ```bash
 npm install
+node /absolute/path/to/install.mjs
 claude mcp add --scope user skill-router node /absolute/path/to/server.mjs
 ```
+
+`install.mjs` links `~/.claude/skill-router` to this repo because the OMP native skill-router extension imports `lib.mjs` from `~/.claude/skill-router`.
 
 ## Test
 
